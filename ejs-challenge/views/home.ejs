@@ -1,0 +1,10 @@
+<%-include("partials/header")%>
+
+<%for(let i=0;i<postInfoArray.length;i++){%>
+    <h1><%=postInfoArray[i].title%></h1>
+    <p class="fifty-chars"><%=postInfoArray[i].blogcontent%>
+    </p>
+    <a href="http://127.0.0.1:3000/posts/<%=postInfoArray[i].title%>">Read more</a>
+<% }%>
+
+<%-include("partials/footer")%>
